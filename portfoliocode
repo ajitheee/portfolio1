@@ -377,6 +377,29 @@
             ];
 
             const experienceData = [
+                // NEW ENTRY 1: DiTTA Research Assistant
+                {
+                    title: 'Research Assistant – DiTTA (Digital Twin for Testing & Analysis)',
+                    company: 'Aerospace Engineering Department, Cal Poly Pomona.',
+                    location: 'Pomona, CA',
+                    duration: 'Nov 2025 – Present',
+                    description: [
+                        'Developing the project website and a Unity-based simulation interface for visualizing complex experimental and numerical results.',
+                        'Collaborating with aerospace researchers to integrate data pipelines, ML models, and visualization systems into real-time digital twin simulations.'
+                    ]
+                },
+                // NEW ENTRY 2: AVL Lab Research Assistant
+                {
+                    title: 'Research Assistant – AVL Lab (Autonomous Vehicle Lab)',
+                    company: 'Computer Engineering Department, Cal Poly Pomona.',
+                    location: 'Pomona, CA',
+                    duration: 'Oct 2025 – Present',
+                    description: [
+                        'Conducting research on Reinforcement Learning and Vision-Language Models (VLMs) for autonomous navigation systems.',
+                        'Implementing and testing algorithms for path planning, obstacle detection, and decision-making using sensor fusion (LIDAR, Optical Flow, and ADS-B).'
+                    ]
+                },
+                // Existing Entries
                 {
                     title: 'Cloud Engineer',
                     company: 'Datatuics Solution Technology LLP',
@@ -412,15 +435,17 @@
                 { name: 'IAM', icon: 'https://lucide.dev/icons/fingerprint?view=react', type: 'security' },
                 { name: 'Threat Hunting', icon: 'https://lucide.dev/icons/eye-off?view=react', type: 'security' },
                 { name: 'Phishing Detection', icon: 'https://lucide.dev/icons/mail-warning?view=react', type: 'security' },
-                // AI/ML Focus
+                // AI/ML Focus (Updated to reflect new experience)
+                { name: 'Reinforcement Learning', icon: 'https://lucide.dev/icons/rocket?view=react', type: 'ai' },
                 { name: 'GenAI & ML', icon: 'https://lucide.dev/icons/brain?view=react', type: 'ai' },
-                { name: 'NLP', icon: 'https://lucide.dev/icons/message-square-text?view=react', type: 'ai' },
-                { name: 'SQL', icon: 'https://lucide.dev/icons/database?view=react', type: 'programming' },
-                { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', type: 'programming' },
+                { name: 'NLP / VLM', icon: 'https://lucide.dev/icons/message-square-text?view=react', type: 'ai' },
                 // Cloud & DevOps
                 { name: 'AWS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg', type: 'cloud' },
                 { name: 'Terraform (IaC)', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg', type: 'cloud' },
                 { name: 'Ansible', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg', type: 'cloud' },
+                // Programming & Tools
+                { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', type: 'programming' },
+                { name: 'SQL', icon: 'https://lucide.dev/icons/database?view=react', type: 'programming' },
                 { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg', type: 'cloud' },
                 { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg', type: 'programming' },
             ];
@@ -433,8 +458,9 @@
                     case 'IAM': return <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a10 10 0 0 0-9.8 12.3c.7 2.4 2 4.3 3.6 5.7s3.5 2.5 5.5 2.7c.3.0.6-.0.7-.1c.3-.1.4-.4.4-.7V11.2"/><circle cx="12" cy="7" r="4"/><path d="M18 13c-2.8 0-5 2.2-5 5s2.2 5 5 5"/></svg>;
                     case 'Threat Hunting': return <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17.9 17.9c-3.8 3.8-10 .6-12.2-1.7-2.3-2.3-5.5-8.5-1.7-12.2m-2.1-1.9c-2.3-2.3-5.5-8.5-1.7-12.2m7.8 0c4.3 0 7 2 7 2 2.6 4.6 2.6 7 0 11.6"/><path d="M17.9 17.9c3.8-3.8.6-10-1.7-12.2-2.3-2.3-8.5-5.5-12.2-1.7m-1.9 2.1c-2.3 2.3-5.5 8.5-1.7 12.2m0 0c4.3 0 7-2 7-2 4.6-2.6 4.6-7 0-11.6"/></svg>;
                     case 'Phishing Detection': return <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 12A10 10 0 0 0 12 2H3v9m10 11c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM3 12h.01M3 6h.01M21 6h.01"/></svg>;
+                    case 'Reinforcement Learning': return <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 2h5l-7 15h-5l7-15zM2 12h5l-2 5h-5l2-5zM12 22h-5l2-5h5l-2 5z"/></svg>;
                     case 'GenAI & ML': return <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9 10a5 5 0 0 1 6 0"/><path d="M9 14c-1.5 0-3 1.5-3 3 0 1.5 1.5 3 3 3s3-1.5 3-3"/><path d="M15 14c1.5 0 3 1.5 3 3 0 1.5-1.5 3-3 3s-3-1.5-3-3"/></svg>;
-                    case 'NLP': return <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 19H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4z"/><path d="M7 8h10M7 12h4"/></svg>;
+                    case 'NLP / VLM': return <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 19H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4z"/><path d="M7 8h10M7 12h4"/></svg>;
                     case 'SQL': return <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/></svg>;
                     default: return <img src={skillsData.find(s => s.name === skillName)?.icon} alt={skillName} className={className.replace('text-cyan-400', '')} />;
                 }
