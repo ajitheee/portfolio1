@@ -1,0 +1,53 @@
+
+
+
+Paste:
+
+console.log("Portfolio loaded");
+
+Commit and push to GitHub
+cd C:\project1
+git add -A
+git commit -m "init static site"
+git branch -M main
+git push -u origin main
+
+Create the Vercel project (static site)
+
+Vercel → Add New → Project → select ajitheee/portfolio1
+
+Framework Preset: Other (Static)
+
+Build Command: (leave empty)
+
+Output Directory: (leave empty or .)
+
+Root Directory: only set if your files are in a subfolder
+
+Click Deploy, then set Settings → Git → Production Branch = main
+
+Quick checks
+
+Must have index.html at the chosen root (otherwise Vercel shows 404).
+
+Use relative paths in HTML (e.g., ./assets/styles.css).
+
+If you run ls now and paste the list you see in C:\project1, I’ll confirm the exact Vercel settings for your layout.
+
+
+  cd C:\project1
+git pull origin main --rebase
+2) Turn your code into the homepage file
+If portfoliocode.txt contains your HTML, rename it to index.html:
+
+powershell
+Copy code
+Rename-Item .\portfoliocode.txt index.html
+(That CRLF warning you saw earlier is normal on Windows—safe to ignore.)
+
+3) Commit and push
+powershell
+Copy code
+git add -A
+git commit -m "rename: portfoliocode.txt -> index.html"
+git push -u origin main
